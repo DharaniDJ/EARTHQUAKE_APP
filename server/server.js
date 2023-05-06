@@ -2,6 +2,7 @@
 // handles entry start-up, routing and other functionalities
 
 const express = require("express");
+const client = require("./elasticsearch/client");
 
 const app = express();
 
