@@ -10,8 +10,11 @@ const client = new Client({
         id: elasticConfig.cloudID,
     },
     auth: {
-        username: elasticConfig.username,
-        password: elasticConfig.password,
+        // basic authentication
+        // username: elasticConfig.username,
+        // password: elasticConfig.password,
+        // API key
+        apiKey: elasticConfig.apiKey,
     },
 });
 
