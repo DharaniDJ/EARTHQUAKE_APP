@@ -1,0 +1,25 @@
+# Data Ingestion
+- Elastic Cloud hosts Elastic products including Elasticsearch and Kibana.
+- Once the server is connected to Elastic Cloud, we will ingest data into Elasticsearch hosted on Elastic Cloud.
+- We will be ingesting global earthquake data from the USGS API.
+- The server will be in charge of fetching the data from the USGS API.
+Upon fetching the data, the server will send the data to Elasticsearch.
+Elasticsearch in turn will transform the data and ingest the data into an index.
+
+# Set up the app for search
+- After data is ingested into Elasticsearch, we will set up our app for search!
+- The client will display a set of criteria a user can select to search for earthquakes.
+- Once the user selects the criteria and clicks on the search button, the client will send the user input to the server.
+  The server in turn will pass the user input into a Elasticsearch request and send the request to Elasticsearch.
+- Upon receiving the request, Elasticsearch will retrieve relevant results and send the results to the server.
+  The server will send the results to the client which will display the results for the user.
+
+# Data Visualization
+- Learning how to connect Elasticsearch to our app and searching for information is a
+  great way to explore our data.
+- In this series, we are going to explore our data even further by using Kibana to
+  visualize earthquake data in Elasticsearch!
+
+useful links:
+- https://dev.to/lisahjung/beginners-guide-to-running-elasticsearch-and-kibana-v8-locally-macoslinux-and-windows-5820
+- https://dev.to/lisahjung/beginners-guide-to-building-a-full-stack-app-nodejs-react-with-elasticsearch-5347
